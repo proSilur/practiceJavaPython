@@ -6,3 +6,5 @@ git commit -m "Message"
 git push
 
 git reset --hard (обновить изменения на компе когда тащищь с гита)
+
+1
