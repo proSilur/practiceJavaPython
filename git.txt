@@ -1,10 +1,18 @@
 
 
-
-git add .
+(Добавление в репозиторий)
+git add . 
 git commit -m "Message"
 git push
 
 
-git reset --hard (обновить изменения на компе когда тащищь с гита)
+
+(Получение с репозитория)
+git fetch 
 git pull
+
+
+
+
+
+git reset --hard (Очистка какаято, хп)
