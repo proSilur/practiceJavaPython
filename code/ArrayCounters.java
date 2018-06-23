@@ -1,4 +1,3 @@
-package codeabbey;
 
 // Problem #21
 

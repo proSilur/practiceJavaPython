@@ -1,4 +1,3 @@
-package codeabbey;
 
 import java.util.Scanner;
 

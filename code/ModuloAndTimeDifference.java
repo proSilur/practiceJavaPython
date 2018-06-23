@@ -1,4 +1,3 @@
-package codeabbey;
 
 public class ModuloAndTimeDifference {
 
