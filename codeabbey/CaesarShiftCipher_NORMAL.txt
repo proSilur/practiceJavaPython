@@ -1,0 +1,19 @@
+public static void main(String args[]) throws java.io.IOException {
+        Scanner scan = new Scanner(System.in).useLocale(Locale.US);
+        int size = scan.nextInt();
+        int code = scan.nextInt();
+        String s = scan.nextLine();
+        
+        for (int i=0; i < size; i++) {
+            s = scan.nextLine();
+            char[] result = s.toCharArray();
+            for(int k=0; k < result.length; k++){
+                if((result[k] >= 'A') && (result[k] <= 'Z')) {
+                    if(result[k] - code < 'A') result[k] = (char) (result[k] + 26 - code);
+                    else result[k] = (char) (result[k] - code);
+                } 
+            }
+            String message = new String(result);
+            System.out.print(message + " ");
+        }    
+    }
