@@ -40,3 +40,25 @@ public class KingAndQueen {
         return false;
     }
 }
+
+// Нормальное решение задачи:
+//    public static void main(String[] args) {
+//        Scanner in = new Scanner(System.in);
+//        int num = Integer.parseInt(in.nextLine());
+//        while (num-- > 0) {
+//            String K = in.next();
+//            String Q = in.next();
+//
+//            int xK = K.charAt(0);
+//            int yK = K.charAt(1);
+//
+//           int xQ = Q.charAt(0);
+//            int yQ = Q.charAt(1);
+//
+//           if (xK == xQ || yK == yQ || Math.abs(xK - xQ) == Math.abs(yK - yQ)) {
+//                System.out.print("Y ");
+//            } else {
+//                System.out.print("N ");
+//            }
+//        }
+//    }
