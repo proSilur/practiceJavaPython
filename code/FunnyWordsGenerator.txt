@@ -1,0 +1,32 @@
+
+import java.util.Arrays;
+import java.util.List;
+import java.util.Scanner;
+
+public class FunnyWordsGenerator {
+    public static void main(String[] args) {
+        List<String> letters = Arrays.asList("b c d f g h j k l m n p r s t v w x z".split("\\s"));
+        List<String> vowels = Arrays.asList("a e i o u".split("\\s"));
+        Scanner scanner = new Scanner(System.in);
+        int step = scanner.nextInt();
+        int seed = scanner.nextInt();
+        for (int i = 0; i < step; i++) {
+            StringBuilder builder = new StringBuilder();
+            int word = scanner.nextInt();
+            for (int j = 1; j < word + 1; j++) {
+                if (j % 2 == 0) builder.append(vowels.get(generate(seed, j) % 5));
+                else builder.append(letters.get(generate(seed, j) % 19));
+            }
+            System.out.print(String.valueOf(builder) + " ");
+        }
+
+
+    }
+
+    private static int generate(int xo, int n) {
+        for (int i = 0; i < n; i++) {
+            xo = (445 * xo + 700001) % 2097152;
+        }
+        return xo;
+    }
+}
